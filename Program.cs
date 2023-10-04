@@ -25,6 +25,7 @@ namespace Lab1_algorithm
             profiler.Run("TimSort",             new TimSortAlgorithm());
             profiler.Run("MergedSort",          new MergedSortAlgorithm());
             profiler.Run("QuickSort",           new QuickSortAlgorithm());
+            profiler.Run("ShellSort",           new ShellSortAlgorithm());
             profiler.Run("Multiply",            new MultipleAlgorithm());
             profiler.Run("Sum",                 new SumAlgorithm());
             profiler.Run("Gorner",              new GornerAlgorithm());
