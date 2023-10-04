@@ -28,17 +28,5 @@ namespace Lab1_algorithm
             }
             return matrix;
         }
-
-        public void WriteMatrix()
-        {
-            for (int i = 0; i < 2; i++)
-            {
-                for (int j = 0; j < 2; j++)
-                {
-                    Console.Write(Base[i, j] + " ");
-                }
-                Console.WriteLine();
-            }
-        }
     }
 }

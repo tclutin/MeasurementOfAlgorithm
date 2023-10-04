@@ -11,12 +11,12 @@ namespace Lab1_algorithm.Algorithms.Sort
     {
         public void Execute(int[] input)
         {
-            TimSort(input);
+            TimSort(input, 32);
         }
           
-        public void TimSort(int[] arr)
+        public void TimSort(int[] arr, int run)
         {
-            int minRun = 32;
+            int minRun = run;
             int len = arr.Length;
 
             for (int i = 0; i < len; i += minRun)
