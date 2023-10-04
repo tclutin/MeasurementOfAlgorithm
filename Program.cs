@@ -29,6 +29,7 @@ namespace Lab1_algorithm
             profiler.Run("Multiply",            new MultipleAlgorithm());
             profiler.Run("Sum",                 new SumAlgorithm());
             profiler.Run("Gorner",              new GornerAlgorithm());
+            profiler.Run("NaiveMethod",         new NativeMethodAlgorithm());
             profiler.Run("ConstantFunc",        new ConstantFuncAlgorithm());
             profiler.Run("QuickPow",            new QuickPowAlgorithm());
             profiler.Run("QuickClassicPow",     new ClassicQuickPowAlgorithm());
