@@ -17,7 +17,7 @@ namespace Lab1_algorithm.Algorithms.Sort
         {
             int step = vector.Length / 2;
             while (step >= 1)
-            {
+            {   
                 for (int i = step; i < vector.Length; i++)
                 {
                     int j = i;

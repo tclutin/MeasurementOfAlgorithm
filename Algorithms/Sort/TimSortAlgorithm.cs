@@ -11,12 +11,13 @@ namespace Lab1_algorithm.Algorithms.Sort
     {
         public void Execute(int[] input)
         {
-            TimSort(input, 32);
+            TimSort(input);
         }
           
-        public void TimSort(int[] arr, int run)
+        public void TimSort(int[] arr)
         {
-            int minRun = run;
+
+            int minRun = FindMinRun(arr.Length);
             int len = arr.Length;
 
             for (int i = 0; i < len; i += minRun)
@@ -37,6 +38,17 @@ namespace Lab1_algorithm.Algorithms.Sort
                     }
                 }
             }
+        }
+        private int FindMinRun(int len)
+        {
+            int flag = 0;
+            while (len >= 64)
+            {
+                flag = flag | (len & 1);
+                len = len >> 1;
+            }
+
+            return len + flag;
         }
         private void InsertionSortBoost(int[] arr, int start, int end)
         {

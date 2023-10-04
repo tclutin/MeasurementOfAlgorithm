@@ -15,9 +15,12 @@ namespace Lab1_algorithm.Algorithms.Arithmetic
 
         public Matrix Multiplicate(Matrix a, Matrix b, int n)
         {
+           
             Matrix result = new Matrix(n);
+            //Перебирает строки первой матрицы a
             for (int i = 0; i < n; i++)
             {
+                //перебирает столбцы второй матрицы b
                 for (int j = 0; j < n; j++)
                 {
                     for (int k = 0; k < n; k++)
