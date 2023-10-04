@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab1_algorithm.Algorithms.Sort
+namespace Lab1_algorithm.Algorithms.Others
 {
     public class ClassicQuickPowAlgorithm : IAlgorithmInt<int>
     {
