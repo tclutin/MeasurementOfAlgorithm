@@ -13,7 +13,7 @@ namespace Lab1_algorithm.Algorithms.Sort
         {
             TimSort(input);
         }
-
+          
         public void TimSort(int[] arr)
         {
             int minRun = 32;

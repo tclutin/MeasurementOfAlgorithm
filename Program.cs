@@ -20,7 +20,13 @@ namespace Lab1_algorithm
         {
             AlgorithmProfiler profiler =  new AlgorithmProfiler(2000, 5);
             profiler.ReloadFiles();
+            var x = profiler.GenerateVector(20);
+            new MergedSortAlgorithm().MergedSort(x);
 
+            foreach (var  item in x)
+            {
+                Console.WriteLine(item);
+            }
             //fast
             profiler.Run("TimSort",             new TimSortAlgorithm());
             profiler.Run("MergedSort",          new MergedSortAlgorithm());
