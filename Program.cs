@@ -18,29 +18,8 @@ namespace Lab1_algorithm
     {
         public static void Main(string[] args)
         {
-
-            AlgorithmProfiler profiler =  new AlgorithmProfiler(2000, 5);
-            profiler.ReloadFiles();
-
-            //fast
-            profiler.Run("TimSort", new TimSortAlgorithm());
-            profiler.Run("MergedSort", new MergedSortAlgorithm());
-            profiler.Run("QuickSort", new QuickSortAlgorithm());
-            profiler.Run("ShellSort", new ShellSortAlgorithm());
-            profiler.Run("Multiply", new MultipleAlgorithm());
-            profiler.Run("Sum", new SumAlgorithm());
-            profiler.Run("Gorner", new GornerAlgorithm());
-            profiler.Run("NaiveMethod", new NativeMethodAlgorithm());
-            profiler.Run("ConstantFunc", new ConstantFuncAlgorithm());
-            profiler.Run("QuickPow", new QuickPowAlgorithm());
-            profiler.Run("QuickClassicPow", new ClassicQuickPowAlgorithm());
-            profiler.Run("SimplePow", new SimplePowAlgorithm());
-            profiler.Run("RecursePow", new RecursivePowAlgorithm());
-
-            //slow
-            profiler._externalCounter = 200;
-            profiler.Run("BubbleSort", new BubbleSortAlgorithm());
-            profiler.Run("MultiplicateMatrix", new MultiplicateMatrixAlgorithm());
+            GUI gui = new GUI();
+            gui.Start();
         }
     }
 }
